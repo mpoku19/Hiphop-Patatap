@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>A Pen by  Melissa A</title>
+  <title>Hiphop Patatap</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   
@@ -20,14 +20,190 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Circles</title>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.14/howler.js"></script>
   <link rel="stylesheet" type="text/css" href="patatap.css">
 
   <script type="text/paperscript" canvas="myCanvas" data-paper-ignore="true">
+    
+    var keyData = {
+        q: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/g49ymfm3ju6odff/Kick%20Drum%20034%20Boi%201%20Da.wav?dl=1']
+        }),
+        color: '#1abc9c'
+        },
+        w: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/2a55hciue86ltxb/Kick%20Drum%20008%20Drake.wav?dl=1']
+        }),
+        color: '#2ecc71'
+        },
+        e: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/kqct5a5yfh6pxbx/Kick%20Drum%20004%20Flashing.wav?dl=1']
+        }),
+        color: '#3498db'
+        },
+        r: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/eenxpzemxe1z1hy/Kick%20Drum%20046%20Tit%20Tit.wav?dl=1']
+        }),
+        color: '#9b59b6'
+        },
+        t: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/zmze40pb10gc0gl/Snare%20Drum%20022%20Duo.wav?dl=1']
+        }),
+        color: '#34495e'
+        },
+        y: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/da65gg8li11sjpp/Kick%20Drum%20015%20Do%20What%20U%20Do.wav?dl=1']
+        }),
+        color: '#16a085'
+        },
+        u: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/ej80436r5yqt9kv/Snare%20Drum%20042%20B1%20Quad.wav?dl=1']
+        }),
+        color: '#27ae60'
+        },
+        i: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/kcqp9q51j66cryq/Clap%20013%20Traditional%20Blend.wav?dl=1']
+        }),
+        color: '#2980b9'
+        },
+        o: {
+        sound: new Howl({
+        src: ['https://www.dropbox.com/s/l01pr1xwr34suug/Clap%20001%20808%20Bright.wav?dl=1']
+        }),
+        color: '#8e44ad'
+        },
+        p: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/h8h1ebu1ysti207/Clap%20022%20ACB.wav?dl=1']
+        }),
+        color: '#2c3e50'
+        },
+        a: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/elh2zxqzp9rxbck/808%20Bass%20F%23m%20Vybes%20Kick.wav?dl=1']
+        }),
+        color: '#f1c40f'
+        },
+        s: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/31l6t2hieayob9x/808%20Bass%20G%23m%20Bass%20Drop.wav?dl=1']
+        }),
+        color: '#e67e22'
+        },
+        d: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/crdi77q907kpjkx/808%20Bass%20Cm%20Trunk%20Shaker.wav?dl=1']
+        }),
+        color: '#e74c3c'
+        },
+        f: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/fwntj8ctmb9jeqg/808%20Bass%20F%23m%20Exclusives%20001.wav?dl=1']
+        }),
+        color: '#95a5a6'
+        },
+        g: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/lvdh4b2m8zuowcc/HiHat%20Closed%20002%20MC38.wav?dl=1']
+        }),
+        color: '#f39c12'
+        },
+        h: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/cyxm67082mxojsd/Hihat%20Open%20010%20Open%20Boi%201%20Da.wav?dl=1']
+        }),
+        color: '#d35400'
+        },
+        j: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/3hroac9hd8rn59t/HiHat%20Open%20001%20808%20Classic.wav?dl=1']
+        }),
+        color: '#1abc9c'
+        },
+        k: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/h8h1ebu1ysti207/Clap%20022%20ACB.wav?dl=1']
+        }),
+        color: '#2ecc71'
+        },
+        l: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/i5mo4hsmxbc7qid/Clap%20032%20Lex%20Reverb.wav?dl=1']
+        }),
+        color: '#3498db'
+        },
+        z: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/f7y5k7ap0vi8go7/Percussion%20Donk%20001.wav?dl=1']
+        }),
+        color: '#9b59b6'
+        },
+        x: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/ihntg94ofozhjos/Percussion%20Clave%20003%20808%20Reverb.wav?dl=1']
+        }),
+        color: '#34495e'
+        },
+        c: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/tdznlvgkyhvs6dm/War%20FX%20Synth%20Boom%20002.wav?dl=1']
+        }),
+        color: '#16a085'
+        },
+        v: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/1wkpnoe9njgwcd5/Chant%20What%20002.wav?dl=1']
+        }),
+        color: '#27ae60'
+        },
+        b: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/hhjxe7lg6r0ubk8/Chant%20Breath%20001.wav?dl=1']
+        }),
+        color: '#2980b9'
+        },
+        n: {
+        sound: new Howl({
+        src: ['https://www.dropbox.com/s/kh6h2578939shp1/Chant%20Hey%20009.wav?dl=1']
+        }),
+        color: '#8e44ad'
+        },
+        m: {
+        sound: new Howl({
+          src: ['https://www.dropbox.com/s/o9x0qb3a0nhgvoz/Chant%20Woo%20003.wav?dl=1']
+        }),
+        color: '#2c3e50'
+        }
+        }
+    
+    var circles = [];
 
     function onKeyDown(event) { 
-      var maxPoint = new Point(view.size.width, view.size.height);          var random = Point.random(); var generate = maxPoint * random; 
-      new Path.Circle(generate, 10).fillColor = "orange"; }
-
+      var maxPoint = new Point(view.size.width, view.size.height);          
+      var random = Point.random(); 
+      var generate = maxPoint * random; 
+      var gcircle = new Path.Circle(generate, 400);
+      gcircle.fillColor = keyData[event.key].color;  
+      keyData[event.key].sound.play();
+      circles.push(gcircle);
+    }
+    
+    
+    function onFrame(event) {
+      for (var i=0; i< circles.length;i++) {
+        circles[i].fillColor.hue += 1;
+        circles[i].scale(0.9);
+      }
+      
+    }
   </script>
 </head>
 
