@@ -1,21 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+
 <head>
-	<title>Hiphop Patatap </title>
+  <meta charset="UTF-8">
+  <title>A Pen by  Melissa A</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
 
-	<script type="text/javascript" src="paper-full.js"></script>
-	<link rel="stylesheet" type="text/css" href="patatap.css">
-	<script type="text/paperscript" canvas="myCanvas">
-	
-	function onKeyDown(event) {
-	// When a key is pressed, set the content of the text item:
-	let maxPoint = new Point(view.size.width, view.size.height);
-		new Path.Circle(new Point(100, 70), 10).fillColor = 'orange';
-}
-</script>
-
+  
 </head>
+
 <body>
-	<canvas id="myCanvas" resize></canvas>
+
+  <html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Circles</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
+  <link rel="stylesheet" type="text/css" href="patatap.css">
+
+  <script type="text/paperscript" canvas="myCanvas" data-paper-ignore="true">
+
+    function onKeyDown(event) { 
+      var maxPoint = new Point(view.size.width, view.size.height);          var random = Point.random(); var generate = maxPoint * random; 
+      new Path.Circle(generate, 10).fillColor = "orange"; }
+
+  </script>
+</head>
+
+<body>
+  <canvas id="myCanvas" resize=""></canvas>
+
 </body>
+
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.22/paper.js'></script>
+
+  
+
+</body>
+
 </html>
